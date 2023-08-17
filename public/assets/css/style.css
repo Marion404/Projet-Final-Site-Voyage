@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title-site {
+    font-family: 'Bagel Fat One', cursive;
+}
+
+
+ 
+
+
+.panier {
+    width: 50px;
+}
+
+.touristes {
+    width: 100px;
+}
+
+.formulaire-connexion {
+    margin-top: 100px;
+}
+
