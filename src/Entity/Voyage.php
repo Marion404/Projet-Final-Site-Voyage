@@ -36,7 +36,7 @@ class Voyage
     #[ORM\Column(length: 255)]
     private ?string $start_time = null;
 
-    #[ORM\ManyToMany(targetEntity: user::class)]
+    #[ORM\ManyToMany(targetEntity: User::class)]
     private Collection $user;
 
     public function __construct()

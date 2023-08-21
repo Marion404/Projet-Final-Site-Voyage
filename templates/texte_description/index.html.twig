@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TexteDescriptionController!{% endblock %}
+
+{% block body %}
+<!-- PAGE EN DUR A CHANGER EN DYNAMIQUE APRES MISE EN PLACE DE LA BDD-->
+<div class="d-flex justify-content-center">
+    <div>
+        <img src="{{asset('assets/images/atlantis.jpg')}}" class="atlantis"> 
+
+        <h1 class="text-center">Atlantis</h1>
+        <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-info">Prix</button>
+        </div>
+        <p>Description:</p>
+    </div> 
+</div>
+{% endblock %}
