@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<!-- PAGE EN DUR A CHANGER EN DYNAMIQUE APRES MISE EN PLACE DE LA BDD-->
+<div class="d-flex justify-content-center">
+    <div>
+        <img src={{voyageId.imagePath}} class="atlantis">
+
+        <h1 class="text-center">{{voyageId.destination}}</h1>
+        <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-info">{{voyageId.price}}</button>
+        </div>
+
+        <p>Description:
+        {{voyageId.description}}
+        </p>
+    </div> 
+</div>
+{% endblock %}

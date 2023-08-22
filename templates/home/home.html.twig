@@ -1,15 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello NavbarController!{% endblock %}
-
-
 {% block body %}
 
   <div class="container">
     <div class="row">
 
       {% for voyage in voyages %}
-        <div class="d-flex justify-content-center  col-sm-12 col-md-6 col-lg-4 p-4">
+        <div id="{{ voyage.destination }}" class="d-flex justify-content-center col-sm-12 col-md-6 col-lg-4 p-4">
           <div class="card" style="width: 18rem;">
             <img src="{{asset('assets/images/') ~ voyage.imagePath}}" class="imageCard" alt="image destination">
             <div class="card-body">
@@ -21,9 +18,6 @@
           </div>  
         </div>
       {% endfor %}
-
-
-    
     </div>
   </div>
 {% endblock %}

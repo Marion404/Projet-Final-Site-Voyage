@@ -5,13 +5,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* p{
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: middle;
+} */
+
 .title-site {
     font-family: 'Bagel Fat One', cursive;
 }
-
-
- 
-
 
 .panier {
     width: 50px;
@@ -25,3 +27,21 @@
     margin-top: 100px;
 }
 
+
+#compte:hover {
+
+    color: white;
+}
+
+h1 {
+    margin: 0 !important;
+}
+
+.imageCard {
+    height: 160px;
+}
+
+.imageCard img {
+    object-fit: cover;
+    overflow: hidden;
+}
