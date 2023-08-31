@@ -32,15 +32,11 @@
                   Destinations
                 </a>
                 <ul class="dropdown-menu bg-info">
-                  <li><a class="dropdown-item" href="#">Atlantis</a></li>
-                  <li><a class="dropdown-item" href="#">Bellwood</a></li>
-                  <li><a class="dropdown-item" href="#">Bikini Bottom</a></li>
-                  <li><a class="dropdown-item" href="#">Gotham City</a></li>
-                  <li><a class="dropdown-item" href="#">Metropolis</a></li>
-                  <li><a class="dropdown-item" href="#">Springfield</a></li>
-                  <li><a class="dropdown-item" href="#">Tatooine</a></li>
-                  <li><a class="dropdown-item" href="#">Townsville</a></li>
-                  <li><a class="dropdown-item" href="#">Zaofu</a></li>
+
+                  {% set destinations = getVoyages() %}
+                  {% for destination in destinations %}
+                    <li><a class="dropdown-item" href="{{ path('app_voyage_details', { 'id': destination.id }) }}">{{ destination.destination }}</a></li>
+                  {% endfor %}
                 </ul>
               </li>
             </ul>

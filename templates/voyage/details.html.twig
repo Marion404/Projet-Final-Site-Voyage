@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+ 
+{% block body %}
+{# <div class="mt-4"> {{voyage.getImagePath}}</div>
+<div class="mt-4"> {{voyage.description}}</div>
+<div class="mt-4">Prix du voyage {{voyage.price}}</div>
+<div class="mt-4"> {{voyage.getDetailedDescription}}</div>
+<div class="mt-4"> {{voyage.destination}}</div>
+<div class="mt-4">Le voyage dure  {{voyage.duration}}</div>
+<div class="mt-4">Le voyage commence le {{voyage.getStartTime}}</div> #}
+
+ <div id="{{ voyage.destination }}" class="d-flex justify-content-center flex-column">
+          <div class="card" style="width: 100%; height: auto;">
+            <img src="{{asset('assets/images/') ~ voyage.imagePath}}" class="imageCard" alt="image destination" style="height: auto;">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{voyage.destination}}</h5>
+              <p class="card-text">{{voyage.description}}</p>
+              <p class="card-text">{{voyage.duration}}</p>
+              <p class="card-text">{{voyage.detailedDescription}}</p>
+
+              <div class="d-flex justify-content-center">
+              <a href="{{ path('app_voyage_details', {id: voyage.id}) }}" class="btn btn-info">{{voyage.price}} €</a>
+              </div>
+            </div>
+
+{% endblock %}

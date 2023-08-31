@@ -13,7 +13,8 @@
               <h5 class="card-title text-center">{{voyage.destination}}</h5>
               <p class="card-text">{{voyage.description}}</p>
               <p class="card-text">{{voyage.duration}}</p>
-              <a href="#" class="btn btn-info">{{voyage.price}} €</a>
+              <a href="{{ path('app_voyage_details', {id: voyage.id}) }}" class="btn btn-info">{{voyage.price}} €</a>
+              
             </div>
           </div>  
         </div>
